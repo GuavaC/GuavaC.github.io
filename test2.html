@@ -3,7 +3,7 @@
 <html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
-<title>1139_Device Orientation Demo </title>
+<title>0912_Device Orientation Demo </title>
 <link rel="dns-prefetch" href="https://apc.codepen.io">
 <link rel="dns-prefetch" href="https://fonts.googleapis.com">
 <meta name="twitter:card" content="summary_large_image">
@@ -296,31 +296,6 @@ Powered by <img alt="Algolia" src="https://cpwebassets.codepen.io/assets/setting
       value="<%= url %>"
       data-view-id="<%= view_id %>">
 
-    <span class="insecure-resource-tooltip resource-problem-tooltip">
-      <div class="help-flyout-link">
-        <span class="icon-help">?</span>
-        <div class="help-flyout help-flyout-reverse">
-          <svg class="icon-x" viewBox="0 0 100 100">
-            <path d="M96.8 83.7L63.1 50l33.7-33.7c3.6-3.6 3.6-9.4 0-13.1s-9.5-3.6-13.1 0L50 36.9 16.3 3.2C12.7-.4 6.9-.4 3.2 3.2s-3.6 9.5 0 13.1L36.9 50 3.2 83.7c-3.6 3.6-3.6 9.4 0 13.1s9.5 3.6 13.1 0L50 63.1l33.7 33.7c3.6 3.6 9.4 3.6 13.1 0s3.6-9.5 0-13.1z"/>
-          </svg>
-          <h5>Insecure Resource</h5>
-          <p>You are linking to a resource using the non-secure http:// protocol, which may not work when the browser is using https:// like CodePen enforces.</p>
-        </div>
-      </div>
-    </span>
-
-    <span class="not-using-url-extension-tooltip resource-problem-tooltip">
-      <div class="help-flyout-link">
-        <span class="icon-help">?</span>
-        <div class="help-flyout help-flyout-reverse">
-          <svg class="icon-x" viewBox="0 0 100 100">
-            <path d="M96.8 83.7L63.1 50l33.7-33.7c3.6-3.6 3.6-9.4 0-13.1s-9.5-3.6-13.1 0L50 36.9 16.3 3.2C12.7-.4 6.9-.4 3.2 3.2s-3.6 9.5 0 13.1L36.9 50 3.2 83.7c-3.6 3.6-3.6 9.4 0 13.1s9.5 3.6 13.1 0L50 63.1l33.7 33.7c3.6 3.6 9.4 3.6 13.1 0s3.6-9.5 0-13.1z"/>
-          </svg>
-          <h5>URL Extension Required</h5>
-          <p>When linking another Pen as a resource, make sure you use a <a href="https://blog.codepen.io/documentation/url-extensions/">URL Extension</a> of the type of code you want to link to. Either <code>.css</code>, <code>.js</code>, or the extension of a matching code processor.</p>
-        </div>
-      </div>
-    </span>
 
     <div class="resource-actions">
       <span class="remove-external-url external-url-option" data-view-id="<%= view_id %>">
@@ -424,18 +399,7 @@ HTML
 </div>
 <div class="editor-actions-right">
 <div class="collaborators-indicators"></div>
-<button id="settings-pane-html" class="button button-medium mini-button settings-nub" data-type="html" title="Open HTML Settings">
-<svg viewBox="0 0 100 100" id="icon-gear" width="10" height="10">
-<path d="M87.687,45.077c-0.313-2.433-0.816-4.807-1.542-7.079l8.145-11.73l-5.827-7.515l-0.094-0.123l-5.824-7.514
-                    l-12.955,5.577c-2.041-1.265-4.192-2.362-6.459-3.219L59.42,0h-9.34h-0.153h-9.341l-3.709,13.474
-                    c-2.27,0.857-4.421,1.955-6.463,3.222l-12.957-5.577l-5.825,7.514l-0.097,0.124l-5.822,7.517l8.146,11.731
-                    c-0.726,2.271-1.233,4.645-1.544,7.079L0,52.032l2.08,9.375l0.033,0.15l2.08,9.375l14.001,0.761c1.295,2.028,2.771,3.926,4.4,5.668
-                    l-2.396,14.227l8.416,4.173l0.138,0.067L37.169,100l9.309-10.796c1.161,0.109,2.335,0.173,3.524,0.173s2.358-0.074,3.52-0.184
-                    l9.317,10.804l8.415-4.173l0.141-0.066l8.413-4.172l-2.396-14.228c1.628-1.741,3.104-3.64,4.4-5.672l14-0.759l2.078-9.375
-                    l0.035-0.154L100,52.025L87.687,45.077z M50.003,34.51c8.435,0,15.272,7.035,15.272,15.719c0,8.679-6.839,15.717-15.272,15.717
-                    c-8.436,0-15.272-7.038-15.272-15.717C34.731,41.545,41.569,34.51,50.003,34.51z" />
-</svg>
-</button>
+
 <button class="button mini-button button-medium editor-dropdown-button editor-dropdown-button-html" data-dropdown="#editor-dropdown-html" aria-haspopup="true" aria-expanded="false">
 <span class="visually-hidden">
 HTML Options
@@ -446,22 +410,7 @@ HTML Options
     C-73.5,183.9-66.8,183.9-63.2,180.3z" />
 </svg>
 </button>
-<ul id="editor-dropdown-html" class="link-list is-dropdown editor-dropdown editor-dropdown-html" data-dropdown-position="css" data-dropdown-type="html">
-<li class="editor-dropdown-list-item">
-<button id="tidy-html" class="invisible-button tidy-code-button" data-editor-type="html">
-Format HTML
-</button>
-</li>
-<li class="editor-dropdown-list-item">
-<button id="view-compiled-html" class="invisible-button view-compiled-button" data-editor-type="html">
-View Compiled HTML
-</button>
-</li>
-<li class="editor-dropdown-list-item">
-<button id="analyze-html" class="invisible-button analyze-button" data-editor-type="html">
-Analyze HTML
-</button>
-</li>
+
 <li class="editor-dropdown-list-item">
 <button id="maximize-html-editor" class="invisible-button maximize-button" data-editor-type="html">
 Maximize HTML Editor
@@ -475,11 +424,6 @@ Minimize HTML Editor
 <li class="editor-dropdown-list-item">
 <button id="fold-all-html" class="invisible-button fold-all-button" data-editor-type="html">
 Fold All
-</button>
-</li>
-<li class="editor-dropdown-list-item">
-<button id="unfold-all-html" class="invisible-button unfold-all-button" data-editor-type="html">
-Unfold All
 </button>
 </li>
 </ul>
